@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  active: false
+  email: MyString
+  password: MyString
+  phone: MyString
+  comment: MyText
+  home_page: MyString
+  merit: 1
+  payment: 9.99
+  due: 2012-03-01 23:45:05
+  drop_id: 1
+  radio_id: 1
+  check_id: 1
+
+two:
+  name: MyString
+  active: false
+  email: MyString
+  password: MyString
+  phone: MyString
+  comment: MyText
+  home_page: MyString
+  merit: 1
+  payment: 9.99
+  due: 2012-03-01 23:45:05
+  drop_id: 1
+  radio_id: 1
+  check_id: 1
