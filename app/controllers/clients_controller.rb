@@ -25,6 +25,7 @@ class ClientsController < ApplicationController
   # GET /clients/new.json
   def new
     @client = Client.new
+    @drops = Drop.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +36,7 @@ class ClientsController < ApplicationController
   # GET /clients/1/edit
   def edit
     @client = Client.find(params[:id])
+    @drops = Drop.all
   end
 
   # POST /clients
