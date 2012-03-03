@@ -59,7 +59,10 @@
   </div>
   <div class="field">
     <%= f.label :radio_id %><br />
-    <%= f.number_field :radio_id %>
+
+    <% Radio.all.each do |radio| %>
+      <%= f.radio_button :radio_id, radio.id %>&nbsp; <%= radio.name  %>
+    <% end  %>
   </div>
   <div class="field">
     <%= f.label :check_id %><br />
