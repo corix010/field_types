@@ -7,9 +7,9 @@ class CreateClients < ActiveRecord::Migration
       t.string :password
       t.string :phone
       t.text :comment
-      t.string :home_page
+      t.string :image_url
       t.integer :merit
-      t.decimal :payment
+      t.decimal :payment, precision: 8, scale: 2
       t.datetime :due
       t.integer :drop_id
       t.integer :radio_id

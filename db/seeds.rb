@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Drop.create(name: 'Drop 1')
+Drop.create(name: 'Drop 2')
+Drop.create(name: 'Drop 3')
+
+Radio.create(name: 'Radio 1')
+Radio.create(name: 'Radio 2')
+Radio.create(name: 'Radio 3')
+
+Check.create(name: 'Check 1')
+Check.create(name: 'Check 2')
+Check.create(name: 'Check 3')

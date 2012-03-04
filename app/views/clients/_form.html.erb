@@ -37,8 +37,8 @@
     <%= f.text_area :comment, :rows => 5 %>
   </div>
   <div class="field">
-    <%= f.label :home_page %><br />
-    <%= f.url_field :home_page %>
+    <%= f.label :image_url %><br />
+    <%= f.url_field :image_url %>
   </div>
   <div class="field">
     <%= f.label :merit %><br />
@@ -46,7 +46,7 @@
   </div>
   <div class="field">
     <%= f.label :payment %><br />
-    <%= f.number_field :payment, {:precision => 5, :scale => 2} %>
+    <%= f.number_field :payment, {:precision => 8, :scale => 2} %>
   </div>
   <div class="field">
     <%= f.label :due %><br />
