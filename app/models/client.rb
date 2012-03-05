@@ -20,8 +20,8 @@ class Client < ActiveRecord::Base
   # validates_numericality_of :merit, :message => "must be a valid number."
   validates_inclusion_of :merit, :in => 1..10, :message => "must be from 1 to 10."
 
-  # :payment
-
+  validates_numericality_of :payment
+  # validates_format_of :payment, :with => /^(\d+(?:[\.\,]\d{2})?)$/, :message => "must be a numerical value."
   # :due
 
   def create_or_update_client_checks(check_ids=[])
