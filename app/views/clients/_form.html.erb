@@ -14,7 +14,7 @@
   <div class="field">
     <%= f.label :name %><br />
     <!-- <%= f.text_field :name %> -->
-    <%= f.text_field :name, {:value => 1, :class => 'rico', :style => 'border:1px solid red'} %>
+    <%= f.text_field :name, {:style => 'border:1px solid blue'} %>
   </div>
   <div class="field">
     <%= f.label :active %><br />
@@ -22,7 +22,8 @@
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email %>
+    <!-- <%= f.email_field :email %> -->
+    <%= f.text_field :email %>
   </div>
   <div class="field">
     <%= f.label :password %><br />
@@ -30,7 +31,7 @@
   </div>
   <div class="field">
     <%= f.label :phone %><br />
-    <%= f.phone_field :phone %>
+    <%= f.phone_field :phone, :value => (number_to_phone(f.object.phone) || '') %>
   </div>
   <div class="field">
     <%= f.label :comment %><br />
@@ -38,7 +39,8 @@
   </div>
   <div class="field">
     <%= f.label :image_url %><br />
-    <%= f.url_field :image_url %>
+    <!-- <%= f.url_field :image_url %> -->
+    <%= f.text_field :image_url %>
   </div>
   <div class="field">
     <%= f.label :merit %><br />
@@ -46,7 +48,8 @@
   </div>
   <div class="field">
     <%= f.label :payment %><br />
-    <%= f.number_field :payment, {:precision => 8, :scale => 2} %>
+    <!-- <%= f.number_field :payment, {:precision => 8, :scale => 2} %> -->
+    <%= f.text_field :payment, :value => (number_to_currency(f.object.payment) || 0) %>
   </div>
   <div class="field">
     <%= f.label :due %><br />
