@@ -46,7 +46,7 @@ class ClientsController < ApplicationController
     
     respond_to do |format|
       if @client.save
-	@client.create_or_update_client_checks(params[:client_check_ids])
+	      @client.create_or_update_client_checks(params[:client_check_ids])
         format.html { redirect_to @client, notice: 'Client was successfully created.' }
         format.json { render json: @client, status: :created, location: @client }
       else
@@ -64,7 +64,7 @@ class ClientsController < ApplicationController
 
     respond_to do |format|
       if @client.update_attributes(params[:client])
-	@client.create_or_update_client_checks(params[:client_check_ids])
+	      @client.create_or_update_client_checks(params[:client_check_ids])
         format.html { redirect_to @client, notice: 'Client was successfully updated.' }
         format.json { head :ok }
       else

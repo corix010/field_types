@@ -33,9 +33,9 @@ ActiveRecord::Schema.define(:version => 20120304024214) do
     t.string   "password"
     t.string   "phone"
     t.text     "comment"
-    t.string   "image_url"
+    t.string   "home_page"
     t.integer  "merit"
-    t.decimal  "payment",    :precision => 8, :scale => 2
+    t.decimal  "payment"
     t.datetime "due"
     t.integer  "drop_id"
     t.integer  "radio_id"
